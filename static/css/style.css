@@ -35,9 +35,9 @@ html {
 }
 
 @media only screen
-and (max-device-width : 480px) {
+and (max-width : 640px) {
     .title {
-        width: 300px;
+        width: 600px;
         top: 50px;
         margin: 0 auto;
     }
