@@ -14,13 +14,26 @@
         <div class="right">Coming Soon!</div>
     </div>
 </div>
-<div class="title">Learning Together<br>
-
-    <div class="subtitle">Frustrated with online courses? <br><br> Wisely
-        connects students with tutors and peers in one amazing community.<br><br>Share your knowledge<br><br>
-        <input type="text" placeholder="Email">
-        <button>Sign Up</button>
+<div class="title">Learn Together<br>
+    <div class="subtitle">Frustrated with online courses? <br> Wisely
+        makes online education more collaborative & social, so that you are engaged in your learning.<br><br>
+        <div id="dis" class="subtitle"><input type="text" placeholder="Email" id="email">
+        <button id="sign">Sign Up</button>
+        <div class="unimportant">Wisely is in stealth mode. Sign Up for the latest info.</div></div>
     </div>
 </div>
 </body>
+<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+    $('#sign').click(function () {
+        var myRootRef = new Firebase('https://wisely.firebaseIO.com/');
+        var $email = $('#email');
+        myRootRef.push({name: $email.val().split('@')[0], email:$email.val()});
+
+        $('#dis').text('Thank You! We will keep you updated!');
+    });
+
+</script>
 </html>
