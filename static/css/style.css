@@ -61,7 +61,7 @@ and (max-device-width : 480px) {
 
 input[type=text] {
     border: none;
-    width: 400px;
+    width: 60%;
     height: 40px;
     padding: 5px 5px 5px 15px;
     font-size: 2.5rem;
