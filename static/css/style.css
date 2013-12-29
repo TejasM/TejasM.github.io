@@ -44,8 +44,11 @@ and (max-device-width : 480px) {
     .subtitle {
         width: 300px;
     }
-}
 
+    input[type=text] {
+        width: 300px;
+    }
+}
 
 @media only screen
 and (max-device-width : 800px) {
@@ -55,6 +58,10 @@ and (max-device-width : 800px) {
     }
 
     .subtitle {
+        width: 300px;
+    }
+
+    input[type=text] {
         width: 300px;
     }
 }
