@@ -36,9 +36,10 @@ html {
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
     .title {
-        display: block;
+        display: none;
         width: 480px;
         position: absolute;
+
     }
 
     .subtitle {
