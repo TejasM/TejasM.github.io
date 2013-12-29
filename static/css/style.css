@@ -46,23 +46,7 @@ and (max-device-width : 480px) {
     }
 
     input[type=text] {
-        width: 150px;
-    }
-}
-
-@media only screen
-and (max-device-width : 800px) {
-    .title {
-        width: 300px;
-        position: absolute;
-    }
-
-    .subtitle {
-        width: 300px;
-    }
-
-    input[type=text] {
-        width: 150px;
+        width: 100px;
     }
 }
 
