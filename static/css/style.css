@@ -37,12 +37,12 @@ html {
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
     .title {
-        width: 480px;
+        width: 300px;
         position: absolute;
     }
 
     .subtitle {
-        width: 480px;
+        width: 300px;
     }
 }
 
@@ -50,12 +50,12 @@ and (max-device-width : 480px) {
 @media only screen
 and (max-device-width : 800px) {
     .title {
-        width: 480px;
+        width: 300px;
         position: absolute;
     }
 
     .subtitle {
-        width: 480px;
+        width: 300px;
     }
 }
 
