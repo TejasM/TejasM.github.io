@@ -46,7 +46,7 @@ and (max-device-width : 480px) {
     }
 
     input[type=text] {
-        width: 300px;
+        width: 150px;
     }
 }
 
@@ -62,7 +62,7 @@ and (max-device-width : 800px) {
     }
 
     input[type=text] {
-        width: 300px;
+        width: 150px;
     }
 }
 
