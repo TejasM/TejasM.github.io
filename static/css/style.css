@@ -37,8 +37,12 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
     .title {
         display: block;
-        max-width: 480px;
+        width: 480px;
         position: absolute;
+    }
+
+    .subtitle {
+        max-width: 480px;
     }
 }
 
