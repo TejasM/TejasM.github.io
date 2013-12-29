@@ -128,3 +128,7 @@ button {
     margin-top: 15px;
     color: lightblue;
 }
+
+.validation {
+    font-style:italic
+}

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Wisely - Collabrate. Tutor. Learn.</title>
-    <meta description="Collabrate. Tutor. Learn."/>
+    <meta description="Learn Together."/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wisely - Learn Together.</title>
     <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -16,11 +16,16 @@
     </div>
 </div>
 <div class="title">Learn Together<br>
-    <div class="subtitle">Frustrated with online courses? <br> Wisely
-        makes online education more collaborative & social, so that you are engaged in your learning.<br><br>
+
+    <div class="subtitle">Frustrated with online courses? <br>
+        Wisely makes learning more collaborative & social, by connecting you with tutors and peers in one amazing
+        community.<br><br>
+
         <div id="dis" class="subtitle"><input type="text" placeholder="Email" id="email">
-        <button id="sign">Sign Up</button>
-        <div class="unimportant">Wisely is in stealth mode. Sign Up for the latest info.</div></div>
+            <button id="sign">Sign Up</button>
+            <div id="validation" class="validation"></div>
+            <div class="unimportant">Wisely is in stealth mode. Sign Up for the latest info.</div>
+        </div>
     </div>
 </div>
 </body>
@@ -31,10 +36,20 @@
     $('#sign').click(function () {
         var myRootRef = new Firebase('https://wisely.firebaseIO.com/');
         var $email = $('#email');
-        myRootRef.push({name: $email.val().split('@')[0], email:$email.val()});
 
-        $('#dis').text('Thank You! We will keep you updated!');
+        if (validateEmail($email)) {
+            myRootRef.push({name: $email.val().split('@')[0], email: $email.val()});
+            $('#dis').text('Thank You! We will keep you updated!');
+        }
+        else {
+            $('#validation').text('That doesn\'t look like a valid email address. Please try again.');
+        }
     });
+
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
 
 </script>
 </html>
