@@ -1,13 +1,7 @@
 html {
-    background: url(../images/background-webcam.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     font-size: 62.5%;
     min-height: 100%;
     width: 100%;
-    overflow-y: hidden;
 }
 
 body {
@@ -19,15 +13,74 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+.top-cover {
+    background: url(../images/background-webcam.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.lower-cover {
+    background-color: #EFEEED;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+}
+
+.third img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.lower-cover .inner {
+    margin: 0 auto;
+    width: 1200px;
+    display: inline;
+    padding-top: 20px;
+}
+
+.inner .third {
+    width: 33%;
+    display: inline-block;
+}
+
+.third .content {
+    padding: 20px;
+}
+
+.lower-cover ul {
+    list-style: none;
+}
+
+.lower-cover li {
+    position: absolute;
+    width: 260px;
+    margin-right: 2%;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.bottom-cover {
+    background: url(../images/bg-footer.png) repeat-x top center #fff;
+    text-align: center;
+    min-height: 100px;
+    padding-top: 25px;
+}
+
+.bottom-cover h1 {
+    font-size: 46px;
+    line-height: 100px;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, serif;
+}
+
 .title {
     font-weight: bold;
     color: #FFFFFF;
-    margin: auto auto;
-    display: table;
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    right: 30px;
+    margin: 30px auto auto;
     text-align: center;
     background: rgba(61, 75, 91, 0.7);
     border-radius: 10px;
@@ -77,6 +130,11 @@ and (max-width : 480px) {
         width: 100px;
     }
 
+    .inner .third {
+        width: 100%;
+        display: inline-block;
+    }
+
     button {
         margin-top: 10px;
     }
@@ -98,6 +156,11 @@ and (max-width : 480px) {
         text-align: center;
     }
 
+    .inner .third {
+        width: 100%;
+        display: inline-block;
+    }
+
     h1 {
         font-size: 3rem;
     }
@@ -116,10 +179,9 @@ and (max-width : 480px) {
 }
 
 .subtitle {
-    margin-top: 2rem;
+    margin: 2rem auto 0;
     max-width: 600px;
     color: #FFFFFF;
-
 }
 
 input[type=text] {
@@ -187,4 +249,9 @@ button {
 a {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.middle-cover {
+    background-color: #95A6C7;
+    min-height: 400px;
 }
