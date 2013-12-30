@@ -183,3 +183,8 @@ button {
 .validation {
     font-style: italic
 }
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
