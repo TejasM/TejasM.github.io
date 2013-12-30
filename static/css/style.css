@@ -46,7 +46,6 @@ and (max-width : 480px) {
         padding: inherit;
         font-size: 3rem;
         margin: 0 auto;
-
     }
 
     .subtitle {
@@ -66,7 +65,7 @@ and (max-width : 480px) {
 @media (min-width : 480px) and (max-width: 767px) {
 
     .title {
-        width: 600px;
+        width: 480px;
         top: 60px;
         position: inherit;
         bottom: inherit;
@@ -79,7 +78,7 @@ and (max-width : 480px) {
     }
 
     .subtitle {
-        width: 600px;
+        width: 480px;
     }
 
     input[type=text] {
