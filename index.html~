@@ -41,9 +41,12 @@
 </div>
 <div class="lower-cover">
     <div class="inner">
-        <div class="third"><div class="content"><img src="static/images/content-background.png">Engage with peers or tutors through interactive whiteboard and screen sharing</div></div>
-        <div class="third"><div class="content"><img src="static/images/content-background.png">Discuss lectures, review difficult concepts, and collaborate on assignments</div></div>
-        <div class="third"><div class="content"><img src="static/images/content-background.png">Contribute to the community by becoming a tutor for courses you have completed</div></div>
+        <div class="third"><img src="static/images/content-background.png">Engage
+<div class="content">Connect with peers or tutors through videoconferencing and interactive whiteboard</div>
+</div>
+        <div class="third"><img src="static/images/content-background.png">Collaborate
+<div class="content">Review lectures, discuss concepts, and collaborate on assignments</div></div>
+        <div class="third"><img src="static/images/content-background.png">Contribute<div class="content">Give back to the community by becoming a tutor for courses you completed</div></div>
     </div>
 </div>
 <div class="bottom-cover">
