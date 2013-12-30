@@ -80,10 +80,6 @@ and (max-width : 480px) {
         text-align: center;
     }
 
-    html {
-        height: 140%;
-    }
-
     .subtitle {
         width: 480px;
     }
