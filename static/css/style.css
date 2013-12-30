@@ -14,7 +14,7 @@ html {
 }
 
 .top-cover {
-    background: url(../images/background-webcam.jpg) no-repeat center top fixed;
+    background: url(../images/background-webcam.jpg) no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
