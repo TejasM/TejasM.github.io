@@ -38,7 +38,7 @@ html {
 and (max-width : 640px) {
     .title {
         width: 300px;
-        top: 50px;
+        top: 60px;
         position: inherit;
         bottom: inherit;
         right: inherit;
@@ -55,6 +55,39 @@ and (max-width : 640px) {
 
     input[type=text] {
         width: 100px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width : 640px) and (max-width: 767px) {
+
+    .title {
+        width: 600px;
+        top: 60px;
+        position: inherit;
+        bottom: inherit;
+        right: inherit;
+        max-height: inherit;
+        padding: inherit;
+        font-size: 3rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .subtitle {
+        width: 600px;
+    }
+
+    input[type=text] {
+        width: 100px;
+    }
+
+    button {
+        margin-top: 10px;
     }
 }
 
@@ -123,5 +156,5 @@ button {
 }
 
 .validation {
-    font-style:italic
+    font-style: italic
 }
