@@ -14,7 +14,7 @@ html {
 }
 
 .top-cover {
-    background: url(../images/background-webcam.jpg) no-repeat center top;
+    background: url(../images/background-webcam.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,8 +44,9 @@ html {
 }
 
 .inner .third {
+    vertical-align: middle;
     width: 33%;
-    display: inline-block;
+    display: table-cell;
 }
 
 .third .content {
