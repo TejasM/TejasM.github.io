@@ -23,7 +23,7 @@ html {
 }
 
 .lower-cover {
-    background: #fff;
+    background: #EFEEED;
     padding: 20px;
     margin: 0 auto;
     text-align: center;
@@ -67,7 +67,7 @@ html {
 }
 
 .bottom-cover {
-    background: url(../images/bg-footer.png) repeat-x top center #EFEEED;
+    background: url(../images/bg-footer.png) repeat-x top center #fff;
     text-align: center;
     min-height: 100px;
     padding-top: 25px;
