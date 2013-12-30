@@ -39,13 +39,14 @@ and (max-width : 480px) {
     .title {
         width: 300px;
         top: 60px;
-        position: inherit;
+        position: static;
         bottom: inherit;
         right: inherit;
         max-height: inherit;
         padding: inherit;
         font-size: 3rem;
         margin: 0 auto;
+        display: block;
     }
 
     .subtitle {
