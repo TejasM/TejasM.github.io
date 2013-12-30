@@ -19,11 +19,11 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .lower-cover {
-    background-color: #EFEEED;
+    background: #fff;
     padding: 20px;
     margin: 0 auto;
     text-align: center;
@@ -67,7 +67,7 @@ html {
 }
 
 .bottom-cover {
-    background: url(../images/bg-footer.png) repeat-x top center #fff;
+    background: url(../images/bg-footer.png) repeat-x top center #EFEEED;
     text-align: center;
     min-height: 100px;
     padding-top: 25px;
