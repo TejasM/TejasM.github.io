@@ -33,10 +33,10 @@
 <script>
     $('#sign').click(function () {
         var myRootRef = new Firebase('https://wisely.firebaseIO.com/');
-        var $email = $('#email');
+        var $email = $('#email').val();
 
         if (validateEmail($email)) {
-            myRootRef.push({name: $email.val().split('@')[0], email: $email.val()});
+            myRootRef.push({name: $email.split('@')[0], email: $email});
             $('#dis').text('Thank You! We will keep you updated!');
         }
         else {
