@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta description="Learn Together."/>
+    <meta name="description"
+          content="Wisely connects you with a knowledgeable community of tutors and peers online to motivate each other and learn together. For coursera and edx courses."/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wisely - Learn Together.</title>
+    <title>Wisely - Learn Together</title>
     <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -15,10 +16,12 @@
         <div class="right">Coming Soon!</div>
     </div>
 </div>
-<div class="title">Learn Together<br>
-    <div class="subtitle">Frustrated with online courses? <br>
+<div class="title"><h1>Learn Together</h1><br>
+
+    <div class="subtitle"><h2>Frustrated with online courses on <strong>Coursera</strong> or <strong>edX</strong>? <br>
         Wisely makes learning more collaborative & social, by connecting you with tutors and peers in one amazing
-        community.<br><br>
+        community.</h2><br><br>
+
         <div id="dis" class="subtitle"><input type="text" placeholder="Email" id="email">
             <button id="sign">Sign Up</button>
             <div id="validation" class="validation"></div>
@@ -48,6 +51,23 @@
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
     }
+
+</script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-41719357-2', 'projectwisely.com');
+    ga('send', 'pageview');
 
 </script>
 </html>
