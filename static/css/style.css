@@ -175,6 +175,9 @@ button {
 .unimportant {
     margin-top: 15px;
     color: lightblue;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .validation {
