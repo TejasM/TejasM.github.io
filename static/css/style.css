@@ -63,7 +63,7 @@ and (max-width : 480px) {
 }
 
 /* Landscape phone to portrait tablet */
-@media (min-width : 480px) and (max-width: 767px) {
+@media only screen and (min-width : 480px) and (max-width: 767px) {
 
     .title {
         width: 480px;
