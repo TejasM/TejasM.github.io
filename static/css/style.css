@@ -79,7 +79,7 @@ and (max-width : 480px) {
     }
 
     html {
-        height: 110%;
+        height: auto;
     }
 
     .subtitle {
