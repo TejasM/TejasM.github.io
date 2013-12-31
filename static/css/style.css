@@ -88,6 +88,8 @@ html {
     border-radius: 10px;
     max-width: 800px;
     padding: 10px 15px 50px;
+    top: 60px;
+    position: relative;
 }
 
 h1 {
@@ -110,7 +112,7 @@ and (max-width : 480px) {
     .title {
         width: 300px;
         top: 60px;
-        position: static;
+        position: relative;
         bottom: inherit;
         right: inherit;
         max-height: inherit;
@@ -148,7 +150,7 @@ and (max-width : 480px) {
     .title {
         width: 480px;
         top: 60px;
-        position: inherit;
+        position: relative;
         bottom: inherit;
         right: inherit;
         max-height: inherit;
@@ -211,6 +213,8 @@ button {
 .nav-bar-container {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
 }
 
 .nav-bar {
